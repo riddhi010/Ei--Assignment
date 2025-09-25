@@ -13,8 +13,11 @@ Both exercises follow **industry best practices**, including **SOLID principles,
 
 src/
 ├── exercise1/        # Design Patterns (Behavioral, Creational, Structural)
+
 ├── exercise2/        # Virtual Classroom Manager
+
 .gitignore
+
 README.md
 
 ## Prerequisites
