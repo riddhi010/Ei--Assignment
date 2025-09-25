@@ -1,13 +1,37 @@
 package exercise1.structural.adapter;
 
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
+        // Configure file logging only
+        try {
+            // Remove default console handlers
+            Logger rootLogger = Logger.getLogger("");
+            Handler[] handlers = rootLogger.getHandlers();
+            for (Handler handler : handlers) {
+                rootLogger.removeHandler(handler);
+            }
+
+            // Set up file logging
+            FileHandler fileHandler = new FileHandler("adapter_report.log", true); // append mode
+            fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+
+        } catch (IOException e) {
+            System.err.println("Failed to initialize log file: " + e.getMessage());
+            return;
+        }
+
         Scanner scanner = new Scanner(System.in);
 
         try {
@@ -22,7 +46,7 @@ public class Main {
                 String choice = scanner.nextLine().trim();
 
                 switch (choice) {
-                    case "1":
+                    case "1" -> {
                         System.out.print("Enter report title: ");
                         String title = scanner.nextLine().trim();
                         if (title.isEmpty()) {
@@ -41,16 +65,14 @@ public class Main {
                         CsvReport csvReport = new CsvReport();
                         ReportGenerator report = new CsvReportAdapter(csvReport);
                         report.generateReport(title, content);
-
-                        break;
-
-                    case "2":
+                        logger.info("CSV report generated with title: " + title);
+                    }
+                    case "2" -> {
                         running = false;
                         System.out.println("Exiting program. Goodbye!");
-                        break;
-
-                    default:
-                        logger.warning("Invalid choice. Please try again.");
+                        logger.info("Program exited by user");
+                    }
+                    default -> logger.warning("Invalid menu choice: " + choice);
                 }
             }
         } catch (Exception e) {

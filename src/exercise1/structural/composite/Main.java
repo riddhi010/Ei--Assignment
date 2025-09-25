@@ -1,15 +1,39 @@
 package exercise1.structural.composite;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Main {
 
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
+        // Configure file logging only
+        try {
+            // Remove default console handlers
+            Logger rootLogger = Logger.getLogger("");
+            Handler[] handlers = rootLogger.getHandlers();
+            for (Handler handler : handlers) {
+                rootLogger.removeHandler(handler);
+            }
+
+            // Set up file logging
+            FileHandler fileHandler = new FileHandler("composite_course.log", true); // append mode
+            fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+
+        } catch (IOException e) {
+            System.err.println("Failed to initialize log file: " + e.getMessage());
+            return;
+        }
+
         Scanner scanner = new Scanner(System.in);
 
         // Ask user for course name
@@ -36,7 +60,7 @@ public class Main {
                 int choice = Integer.parseInt(scanner.nextLine().trim());
 
                 switch (choice) {
-                    case 1:
+                    case 1 -> {
                         System.out.print("Enter module name: ");
                         String moduleName = scanner.nextLine().trim();
                         if (moduleName.isEmpty()) {
@@ -46,9 +70,8 @@ public class Main {
                         Module module = new Module(moduleName);
                         course.add(module);
                         logger.info("Module added: " + moduleName);
-                        break;
-
-                    case 2:
+                    }
+                    case 2 -> {
                         if (course.getChildren().isEmpty()) {
                             logger.warning("No modules available. Add a module first.");
                             break;
@@ -73,23 +96,21 @@ public class Main {
                         Lesson lesson = new Lesson(lessonTitle);
                         selectedModule.add(lesson);
                         logger.info("Lesson added: " + lessonTitle + " to Module: " + selectedModule.getModuleName());
-                        break;
-
-                    case 3:
+                    }
+                    case 3 -> {
                         if (course.getChildren().isEmpty()) {
                             System.out.println("No modules/lessons added yet.");
                         } else {
                             course.display(0);
                         }
-                        break;
-
-                    case 4:
+                        logger.info("Viewed course hierarchy");
+                    }
+                    case 4 -> {
                         running = false;
                         System.out.println("Exiting program. Goodbye!");
-                        break;
-
-                    default:
-                        logger.warning("Invalid choice. Try again.");
+                        logger.info("Program exited by user");
+                    }
+                    default -> logger.warning("Invalid choice: " + choice);
                 }
             } catch (NumberFormatException e) {
                 logger.warning("Invalid input. Enter a number.");

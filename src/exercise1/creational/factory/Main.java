@@ -1,16 +1,40 @@
 package exercise1.creational.factory;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Main {
 
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
+        // Configure file logging only
+        try {
+            // Remove default console handlers
+            Logger rootLogger = Logger.getLogger("");
+            Handler[] handlers = rootLogger.getHandlers();
+            for (Handler handler : handlers) {
+                rootLogger.removeHandler(handler);
+            }
+
+            // Set up file logging
+            FileHandler fileHandler = new FileHandler("factory.log", true); // append mode
+            fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+
+        } catch (IOException e) {
+            System.err.println("Failed to initialize log file: " + e.getMessage());
+            return;
+        }
+
         Scanner scanner = new Scanner(System.in);
         List<Document> documents = new ArrayList<>();
 
@@ -27,7 +51,7 @@ public class Main {
                 String choice = scanner.nextLine().trim();
 
                 switch (choice) {
-                    case "1":
+                    case "1" -> {
                         System.out.print("Enter document type (PDF/Word/Excel): ");
                         String type = scanner.nextLine().trim();
                         System.out.print("Enter document content: ");
@@ -37,15 +61,15 @@ public class Main {
                             Document document = DocumentFactory.createDocument(type);
                             document.generate(content);
                             documents.add(document);
-                            logger.info(type + " document added to the system.");
+                            logger.info(type + " document added to the system with content: " + content);
                         } catch (IllegalArgumentException e) {
-                            logger.warning(e.getMessage());
+                            logger.warning("Failed to create document: " + e.getMessage());
                         }
-                        break;
-
-                    case "2":
+                    }
+                    case "2" -> {
                         if (documents.isEmpty()) {
                             System.out.println("No documents created yet.");
+                            logger.info("Viewed all documents: none found");
                         } else {
                             System.out.println("\n--- All Documents ---");
                             int count = 1;
@@ -54,16 +78,15 @@ public class Main {
                                 count++;
                             }
                             System.out.println("-------------------");
+                            logger.info("Viewed all documents, total count: " + documents.size());
                         }
-                        break;
-
-                    case "3":
+                    }
+                    case "3" -> {
                         running = false;
                         System.out.println("Exiting program. Goodbye!");
-                        break;
-
-                    default:
-                        logger.warning("Invalid choice. Please try again.");
+                        logger.info("Program exited by user");
+                    }
+                    default -> logger.warning("Invalid menu choice: " + choice);
                 }
             }
         } catch (Exception e) {
