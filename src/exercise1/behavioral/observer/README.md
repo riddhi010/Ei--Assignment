@@ -8,7 +8,7 @@ When the state of one object (the subject) changes, all its dependents (observer
 
 ---
 
-**Use Case Demonstrated:** Assignment Deadline Notification  
+## **Use Case Demonstrated:** Assignment Deadline Notification  
 
 **Scenario:**  
 A teacher updates an assignment deadline. Students enrolled in the course automatically receive a notification about the new deadline, without having to check manually.
