@@ -22,9 +22,16 @@ A teacher updates an assignment deadline. Students enrolled in the course automa
 ---
 
 ## Output
-<img width="796" height="432" alt="image" src="https://github.com/user-attachments/assets/502c76c0-4de2-498d-b7b4-bfd789da987e" />
-<img width="922" height="424" alt="image" src="https://github.com/user-attachments/assets/665fd5b4-3a65-4c6f-bd7b-ebeecd7d1054" />
-<img width="685" height="298" alt="image" src="https://github.com/user-attachments/assets/6e5c3942-5a12-4be3-bdd7-2db1d10d490d" />
+<img width="364" height="129" alt="image" src="https://github.com/user-attachments/assets/bf98eb34-91c2-4c90-af6f-4d4a197ec37f" />
+<img width="689" height="518" alt="image" src="https://github.com/user-attachments/assets/91b7b92c-8a5e-4869-9e61-062ea42603c8" />
+<img width="726" height="299" alt="image" src="https://github.com/user-attachments/assets/c1d08cb5-2117-4c89-93e9-dc08ff3b47c0" />
+
+## Logging 
+
+<img width="729" height="220" alt="image" src="https://github.com/user-attachments/assets/0d57189a-8120-4c60-808e-7adb1012afc0" />
+
+
+
 
 
 
