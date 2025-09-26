@@ -107,5 +107,6 @@ The project uses Java’s built-in **`java.util.logging`** to provide:
 ---
 
 ## 🖼️ Sample Output
-> _(Replace this placeholder with a screenshot of your console output)_
+> _<img width="624" height="697" alt="image" src="https://github.com/user-attachments/assets/82e5edc0-fd1a-45e4-a650-e117caf2f0eb" />
+
 
