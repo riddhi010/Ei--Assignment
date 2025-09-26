@@ -103,10 +103,18 @@ The project uses Java’s built-in **`java.util.logging`** to provide:
 - **Warnings** for invalid operations (e.g., adding a duplicate classroom).
 - **Informational logs** for successful actions.
 
+> <img width="627" height="383" alt="image" src="https://github.com/user-attachments/assets/68f80ad2-95f4-4546-abdc-b542ea307eb3" />
+
 
 ---
 
 ## 🖼️ Sample Output
-> _<img width="624" height="697" alt="image" src="https://github.com/user-attachments/assets/82e5edc0-fd1a-45e4-a650-e117caf2f0eb" />
+> <img width="624" height="697" alt="image" src="https://github.com/user-attachments/assets/82e5edc0-fd1a-45e4-a650-e117caf2f0eb" />
+> <img width="803" height="681" alt="image" src="https://github.com/user-attachments/assets/5474a0ba-3372-4492-ad4b-15c81d2c4763" />
+> <img width="634" height="320" alt="image" src="https://github.com/user-attachments/assets/1d08cec4-6689-44e2-9c88-e62d6d38142a" />
+> <img width="656" height="651" alt="image" src="https://github.com/user-attachments/assets/ce6e84f0-f42c-4c23-afa4-8f35dd00303b" />
+
+
+
 
 
