@@ -32,6 +32,32 @@ exercise2/
 └── README.md                            # Project documentation
 ```
 
+## How to Run
+
+### Step 1: Clone the Repository
+```bash
+git clone <repository_url>
+cd EI-Assignment
+```
+
+### Step 2: Open in IntelliJ IDEA (Recommended)
+- Open IntelliJ IDEA.
+- Choose **Open** and select the `EI-Assignment` folder.
+- Ensure the `src` folder is marked as **Sources Root**:
+  - Right-click on `src` → **Mark Directory as** → **Sources Root**.
+
+### Step 3: Build the Project
+- IntelliJ will automatically build the project.
+- If it doesn't, manually build using: **Build > Build Project**.
+
+### Step 4: Run Exercises
+Navigate to:
+```
+EI-Assignment/src/exercise2/Main.java
+```
+- Right-click on Main.java → Run.
+- The console will display the Virtual Classroom Manager interactive menu.
+- Follow the on-screen options to use the application.
 
 ## Design Patterns Used
 The project integrates **multiple design patterns** for maintainability and scalability:
