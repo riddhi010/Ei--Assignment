@@ -18,17 +18,17 @@ The client doesn’t need to know how each document type is created — the **fa
 
 ## UML Diagram
 
-<img width="1165" height="781" alt="image" src="https://github.com/user-attachments/assets/9f667906-8b4c-4aa5-af3d-44f3e0359dba" />
+> <img width="1165" height="781" alt="image" src="https://github.com/user-attachments/assets/9f667906-8b4c-4aa5-af3d-44f3e0359dba" />
 
 
 ---
 
 ## Output
-<img width="614" height="505" alt="image" src="https://github.com/user-attachments/assets/8224276a-2203-4acb-8c9c-48312e31234e" />
+> <img width="614" height="505" alt="image" src="https://github.com/user-attachments/assets/8224276a-2203-4acb-8c9c-48312e31234e" />
 
 ---
 
 ## Logging 
-<img width="781" height="136" alt="image" src="https://github.com/user-attachments/assets/0565b7a2-1444-48be-b18c-f918d270558f" />
+> <img width="781" height="136" alt="image" src="https://github.com/user-attachments/assets/0565b7a2-1444-48be-b18c-f918d270558f" />
 
 
