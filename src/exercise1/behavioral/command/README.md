@@ -18,18 +18,18 @@ The system encapsulates each action as a command, which can be executed by a com
 ---
 
 ## UML Diagram
-<img width="1174" height="511" alt="image" src="https://github.com/user-attachments/assets/d0a2e898-7b77-4d2a-bfbc-33630ed94aa0" />
+> <img width="1174" height="511" alt="image" src="https://github.com/user-attachments/assets/d0a2e898-7b77-4d2a-bfbc-33630ed94aa0" />
 
 
 
 ---
 
 ## Output
-<img width="390" height="488" alt="image" src="https://github.com/user-attachments/assets/9ac347b7-5bfe-4066-aedb-34ce609799ef" />
-<img width="397" height="575" alt="image" src="https://github.com/user-attachments/assets/6dd56bd0-b862-44d7-abd4-c274ee7a4ae3" />
+> <img width="390" height="488" alt="image" src="https://github.com/user-attachments/assets/9ac347b7-5bfe-4066-aedb-34ce609799ef" />
+> <img width="397" height="575" alt="image" src="https://github.com/user-attachments/assets/6dd56bd0-b862-44d7-abd4-c274ee7a4ae3" />
 
 ## Logging 
-<img width="697" height="225" alt="image" src="https://github.com/user-attachments/assets/48d8fe0d-77ef-4e95-bd11-40a8236e101e" />
+> <img width="697" height="225" alt="image" src="https://github.com/user-attachments/assets/48d8fe0d-77ef-4e95-bd11-40a8236e101e" />
 
 
 
