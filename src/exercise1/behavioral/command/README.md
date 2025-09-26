@@ -26,6 +26,7 @@ The system encapsulates each action as a command, which can be executed by a com
 
 ## Output
 > <img width="390" height="488" alt="image" src="https://github.com/user-attachments/assets/9ac347b7-5bfe-4066-aedb-34ce609799ef" />
+
 > <img width="397" height="575" alt="image" src="https://github.com/user-attachments/assets/6dd56bd0-b862-44d7-abd4-c274ee7a4ae3" />
 
 ## Logging 
