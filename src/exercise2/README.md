@@ -20,14 +20,23 @@ Key features:
 ## Folder structure: 
 
 exercise2/
+
 ├── manager/
+
 │   └── VirtualClassroomManager.java    # Core logic for managing classrooms
+
 ├── model/
+
 │   ├── Assignment.java                 # Represents an assignment
+
 |   |__ AssignmentObserver.java         # Observer interface 
+
 │   ├── Classroom.java                  # Classroom entity, manages students & assignments
+
 │   |── Student.java                    # Represents a student (Observer)
+
 ├── Main.java                            # Entry point with interactive menu
+
 └── README.md                            # You are here
 
 
