@@ -107,6 +107,9 @@ The project uses Java’s built-in **`java.util.logging`** to provide:
 
 
 ---
+## UML Diagram 
+> <img width="772" height="658" alt="image" src="https://github.com/user-attachments/assets/f7b8ab30-3da7-49d9-b994-8d08c24a1812" />
+
 
 ## 🖼️ Sample Output
 > <img width="624" height="697" alt="image" src="https://github.com/user-attachments/assets/82e5edc0-fd1a-45e4-a650-e117caf2f0eb" />
