@@ -17,16 +17,16 @@ Using an Adapter (`CsvReportAdapter`) allows the system to generate CSV reports 
 ---
 
 ## UML Diagram
-<img width="987" height="581" alt="image" src="https://github.com/user-attachments/assets/10e3505d-5955-4eeb-93a7-f342dcd41707" />
+> <img width="987" height="581" alt="image" src="https://github.com/user-attachments/assets/10e3505d-5955-4eeb-93a7-f342dcd41707" />
 
 
 ---
 
 ## Output
-<img width="483" height="307" alt="image" src="https://github.com/user-attachments/assets/e3a5ec23-7a46-4d43-9e9c-745c407690ef" />
+> <img width="483" height="307" alt="image" src="https://github.com/user-attachments/assets/e3a5ec23-7a46-4d43-9e9c-745c407690ef" />
 
 
 ---
 
 ## Logging 
-<img width="708" height="98" alt="image" src="https://github.com/user-attachments/assets/85fde66d-3e3b-4d46-bb8f-ece6e6d1840a" />
+> <img width="708" height="98" alt="image" src="https://github.com/user-attachments/assets/85fde66d-3e3b-4d46-bb8f-ece6e6d1840a" />
